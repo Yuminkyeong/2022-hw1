@@ -1,0 +1,217 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연말 정산 트리</title>
+    <link rel="shortcut icon"
+          href="data:image/jpeg;base64,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">
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+    <meta property="og:image"
+          content="/static/tree.png">
+    <meta property="og:title" content="연말 정산 트리">
+    <meta property="og:description" content="1년 동안 의미있던 기억들을 트리에 기록해보기!">
+
+
+    <!---->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src='/scripts/jquery-1.11.0.js'></script>
+    <script type="text/javascript" src='/scripts/jquery.table2excel.js'></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+    <!--    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>-->
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&amp;family=Poor+Story&amp;display=swap"
+      rel="stylesheet">
+<link rel="stylesheet" href="/static/tree.css">
+<script type="text/javascript" src="/static/xmas.js"></script>
+<style>
+        .tree {
+            width: 200px;
+            height: 200px;
+            background-image: url('/static/tree.png');
+            background-size: cover;
+            background-position: center;
+            margin: 29px auto 0px 2px;
+            position: absolute;
+        }
+        .window {
+            width: 200px;
+            height: 260px;
+            background-image: url('/static/window.png');
+            background-size: cover;
+            background-position: center;
+            margin: 59px auto 0px auto;
+            position: relative;
+        }
+         .window2 {
+            width: 200px;
+            height: 260px;
+            background-image: url('/static/trans.png');
+            background-size: cover;
+            background-position: center;
+            margin: 59px auto 0px auto;
+            position: relative;
+        }
+
+
+
+
+</style>
+
+<div class="page1">
+    <h2 class="envelope-msg">연말 정산<br>트리 꾸미기</h2>
+    <div class="window">
+        <div class="tree"></div>
+        <button class="btn-2" onclick="closeP1()"><span>꾸미러 가기</span></button>
+    </div>
+</div>
+
+<div class="page2" style="display:none">
+    <h2 class="envelope-msg">연말 정산<br>트리 꾸미기</h2>
+    <div class="window2">
+        <div class="window" style="position: absolute; margin: -1px 0px 0px -122px"></div>
+        <img class="moon1" style="display:none" src="/static/moon1.png">
+        <img class="moon2" style="display:none" src="/static/moon2.png">
+
+
+        <div class="tree" style="margin: 29px 0px 0px -122px"></div>
+
+
+                <img class="hat" style="display:none"  src="/static/hat.png">
+        <img class="star" style="display:none" src="/static/star.png">
+
+                        <img class="socks" style="display:none" src="/static/socks.png">
+        <img class="cookie" style="display:none" src="/static/cookie.png">
+                <img class="santa" style="display:none" src="/static/santa.png">
+
+
+                                <img class="socks1" style="display:none" src="/static/socks.png">
+        <img class="cookie1" style="display:none" src="/static/cookie.png">
+                <img class="santa1" style="display:none" src="/static/santa.png">
+
+                                        <img class="socks2" style="display:none" src="/static/socks.png">
+        <img class="cookie2" style="display:none" src="/static/cookie.png">
+                <img class="santa2" style="display:none" src="/static/santa.png">
+
+        <img class="num1" src="/static/1.png">
+        <div class="num1-text"></div>
+        <img class="num2" src="/static/2.png">
+        <div class="num2-text"></div>
+        <img class="num3" src="/static/3.png">
+                <div class="num3-text"></div>
+        <img class="num4" src="/static/4.png">
+                        <div class="num4-text"></div>
+        <img class="num5" src="/static/5.png">
+                        <div class="num5-text"></div>
+        <div class="texts">
+            <img class="line1" src="/static/line1.png">
+            <img class="line2" src="/static/line2.png">
+            <img class="line3" src="/static/line3.png">
+            <img class="line4" src="/static/line4.png">
+            <img class="line5" src="/static/line5.png">
+        </div>
+        <div class="input-text">
+<!-- multistep form -->
+<form id="msform">
+    <!-- progressbar -->
+    <div id="progressbar">
+        <li class="active" style="font-weight: bold">기억남는일1</li>
+        <li style="font-weight: bold">기억남는일2</li>
+        <li style="font-weight: bold">기억남는일3</li>
+        <li style="font-weight: bold">기억남는일4</li>
+        <li style="font-weight: bold">기억남는일5</li>
+    </div>
+    <!-- fieldset -->
+    <fieldset>
+<!--        <h2 class="fs-title">Start</h2>-->
+<!--        <h3 class="fs-subtitle">Upload the file on which this tool is based</h3>-->
+                <select name="formula" id="background" style="border-radius: 4px; width: 180px; height: 39px; margin: 7px 0px 23px -167px;" onchange="select1()">
+            <option value="">배경 장식을 선택하세요!</option>
+            <option value="moon0">🐤 없음</option>
+            <option value="moon1">🌓 오른쪽 달</option>
+                    <option value="moon2">🌕 가운데 달</option>
+        </select>
+             <input type="text" id="str" name="str" style="height:44px;" placeholder="기억에 남았던 일을 짤막하게 적어주세요!(20자 내외가 좋아요!)" />
+        <input type="button" name="next" class="next action-button" value="다음!"
+               style="border-radius: 10px" onclick="next1()"
+        />
+    </fieldset>
+    <fieldset>
+            <select name="formula" id="background2" style="border-radius: 4px; width: 180px; height: 39px; margin: 7px 0px 23px -167px;" onchange="select2()">
+            <option value="">트리 장식을 선택하세요!</option>
+            <option value="t0">🐤 없음</option>
+            <option value="t1">✨ 별</option>
+                <option value="t2">🎉 꼬깔 모자</option>
+        </select>
+             <input type="text" id="str2" name="str" style="height:44px;" placeholder="기억에 남았던 일을 짤막하게 적어주세요!(20자 내외가 좋아요!)" />
+                <input type="button" name="previous" class="previous action-button" value="이전"
+               style="border-radius: 10px"/>
+        <input type="button" name="next" class="next action-button" value="다음!"
+               style="border-radius: 10px" onclick="next2()"
+        />
+    </fieldset>
+
+    <fieldset>
+  <select name="formula" id="background3" style="border-radius: 4px; width: 180px; height: 39px; margin: 7px 0px 23px -167px;" onchange="select3()">
+            <option value="">트리 장식을 선택하세요!</option>
+            <option value="ttt0">🐤 없음</option>
+            <option value="ttt1">🎅 산타 인형</option>
+                <option value="ttt2">🥨 쿠키</option>
+                      <option value="ttt3">🧦 양말</option>
+        </select>
+             <input type="text" id="str3" name="str" style="height:44px;" placeholder="기억에 남았던 일을 짤막하게 적어주세요!(20자 내외가 좋아요!)" />
+                <input type="button" name="previous" class="previous action-button" value="이전"
+               style="border-radius: 10px"/>
+        <input type="button" name="next" class="next action-button" value="다음!"
+               style="border-radius: 10px" onclick="next3()"
+        />
+    </fieldset>
+    <fieldset>
+  <select name="formula" id="background4" style="border-radius: 4px; width: 180px; height: 39px; margin: 7px 0px 23px -167px;" onchange="select4()">
+            <option value="">트리 장식을 선택하세요!</option>
+            <option value="ttt0">🐤 없음</option>
+            <option value="ttt1">🎅 산타 인형</option>
+                <option value="ttt2">🥨 쿠키</option>
+                      <option value="ttt3">🧦 양말</option>
+        </select>
+             <input type="text" id="str4" name="str" style="height:44px;" placeholder="기억에 남았던 일을 짤막하게 적어주세요!(20자 내외가 좋아요!)" />
+                <input type="button" name="previous" class="previous action-button" value="이전"
+               style="border-radius: 10px"/>
+        <input type="button" name="next" class="next action-button" value="다음!"
+               style="border-radius: 10px" onclick="next4()"
+        />
+    </fieldset>
+        <fieldset>
+  <select name="formula" id="background5" style="border-radius: 4px; width: 180px; height: 39px; margin: 7px 0px 23px -167px;" onchange="select5()">
+            <option value="">트리 장식을 선택하세요!</option>
+            <option value="ttt0">🐤 없음</option>
+            <option value="ttt1">🎅 산타 인형</option>
+                <option value="ttt2">🥨 쿠키</option>
+                      <option value="ttt3">🧦 양말</option>
+        </select>
+             <input type="text" id="str5" name="str" style="height:44px;" placeholder="기억에 남았던 일을 짤막하게 적어주세요!(20자 내외가 좋아요!)" />
+                <input type="button" name="previous" class="previous action-button" value="이전"
+               style="border-radius: 10px"/>
+        <input type="button" name="next" class="next action-button" value="다음!"
+               style="border-radius: 10px" onclick="next5()"
+        />
+    </fieldset>
+        <fieldset>
+        <input type="button" name="share" class="share action-button" value="결과 공유하기!"
+               style="border-radius: 10px; background-color: orange" onclick="submit1()"
+        />
+    </fieldset>
+</form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
